@@ -68,7 +68,7 @@ body{
     padding: var(--padding-second);
 }
 
-.data input{
+.data input , #submit{
     border: var(--border-second);
     width: 100%;
     padding: 0.7em 0.8em;
@@ -81,6 +81,10 @@ body{
     position: relative;
 }
 
+#submit{
+    background: var(--backdrop-bg);
+    color: var(--primary-color);
+}
 /* input:focus+label,
 input:not(:placeholder-shown)+label {
     font-size: 16px;

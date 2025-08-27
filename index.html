@@ -15,7 +15,7 @@
         <div class="foating-circle"></div>
         <div class="foating-circle"></div>
         <h2>Add New Product</h2>
-        <form action="" method="get">
+        <form action="" method="post">
             <!-- Name -->
             <div class="data">
 
@@ -35,7 +35,7 @@
             <!-- Images -->
             <div class="data">
 
-                <input type="file" id="images" name="images"  multiple>
+                <input type="text" id="images"  multiple>
                 <label for="images">Upload Images</label>
 
             </div>
@@ -59,13 +59,15 @@
             <!-- Description -->
            <div class="data">
 
-            <input type="text" id="description" name="description" required></textarea>
+            <input type="text" id="description" name="description" required>
             <label for="description">Description</label>
             
            </div>
             
             <!-- Submit -->
-            <button type="submit" id="submit">Save Product</button>
+           <div class="data">
+            <input type="submit" id="submit" name="submit">
+           </div>
         </form>
     </div>
 </body>
