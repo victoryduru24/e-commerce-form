@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="form-El">
+        <div class="foating-circle"></div>
+        <div class="foating-circle"></div>
+        <div class="foating-circle"></div>
+        <h2>Add New Product</h2>
+        <form action="" method="get">
+            <!-- Name -->
+            <div class="data">
+
+                <input type="text" id="name" name="name" required>
+                <label for="name">Product Name</label>
+
+            </div>
+            
+            <!-- Price -->
+           <div class="data">
+
+              <input type="number" id="price" name="price" required>
+              <label for="price">Price</label>
+            
+            </div>
+
+            <!-- Images -->
+            <div class="data">
+
+                <input type="file" id="images" name="images"  multiple>
+                <label for="images">Upload Images</label>
+
+            </div>
+
+            <!-- Category -->
+           <div class="data">
+
+             <input type="text" id="category" name="category" required>
+             <label for="category">Category</label>
+            
+           </div>
+           
+            <!-- Quantity -->
+           <div class="data">
+
+             <input type="number" id="quantity" name="quantity" required>
+             <label for="quantity">Quantity Available</label>
+
+           </div>
+
+            <!-- Description -->
+           <div class="data">
+
+            <input type="text" id="description" name="description" required></textarea>
+            <label for="description">Description</label>
+            
+           </div>
+            
+            <!-- Submit -->
+            <button type="submit" id="submit">Save Product</button>
+        </form>
+    </div>
+</body>
+
+</html>

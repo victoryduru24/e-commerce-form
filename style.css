@@ -1,0 +1,96 @@
+:root{
+    --primary-color: hsl(208, 100%, 97%);
+    --text-color:#000;
+    --bg-gradient: linear-gradient(135deg, hsl(267, 97%, 43%) 0% ,hsl(244, 91%, 21%) 100%);
+    --border: 0.1rem solid hsla(219, 100%, 75%, 0.188);
+    --heading-text: 2rem;
+    --input-text:0.6rem;
+    --text-font:  'Segoe UI', sans-serif;
+    --backdrop-filter:blur(0.10rem);
+    --backdrop-bg: hsla(244, 65%, 37%, 0.424);
+    --form-padding: 2rem 3rem;
+    --radius:0.6rem;
+    --shadow:0.8rem 0.8rem 1rem hsl(244, 91%, 21%),-0.8rem -0.8rem 1rem hsla(262, 84%, 24%, 0.612);
+    --attr-cont: attr(name);
+    --padding-second: 0 0.5rem;
+    --weight: 400;
+    --size-1:1rem;
+    --border-second:1px solid hsl(0, 3%, 60%);
+
+    
+}
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    color: var(--primary-color);
+    background: var(--bg-gradient);
+    font-family: var(--text-font);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data{
+    position: relative;
+    margin: 1.2rem 0;
+}
+.form-El{
+    border: var(--border);
+    background: var(--backdrop-bg);
+    backdrop-filter: var(--backdrop-filter);
+    -webkit-backdrop-filter: var(--backdrop-filter);
+    padding: var(--form-padding);
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+}
+
+.data label{
+    position: absolute;
+    left: 0.75rem;
+    top: 1rem;
+    color: var(--backdrop-bg);
+    font-size: var(--size-1);
+    font-weight: var(--weight);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    padding: var(--padding-second);
+}
+
+.data input{
+    border: var(--border-second);
+    width: 100%;
+    padding: 0.7em 0.8em;
+    border-radius: var(--radius);
+    font-size: var(--size-1);
+    transition: all 0.3s ease;
+    color: var(--text-color);
+    outline: none;
+    z-index: 1;
+    position: relative;
+}
+
+/* input:focus+label,
+input:not(:placeholder-shown)+label {
+    font-size: 16px;
+    color: #4299e1;
+    font-weight: 600;
+    z-index: 2;
+} */
+
+input:focus {
+    border-color: #044a91;
+    box-shadow: 0 0 0 4px rgba(4, 93, 167, 0.2);
+}
+
