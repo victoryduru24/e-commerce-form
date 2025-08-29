@@ -10,7 +10,7 @@ const categoryEl = document.querySelector("#category");
 const availqtyEl = document.querySelector("#quantity");
 const submitbtn = document.querySelector("#submit");
 
-submitbtn.addEventListener("click",  function(event){
+submitbtn.addEventListener("submit",  function(event){
     event.preventDefault();
 
     alert("with all my billions😒😒😒🙆‍♀️");
@@ -21,7 +21,7 @@ submitbtn.addEventListener("click",  function(event){
     imageEl.value = "";
     categoryEl.value = "";
     availqtyEl.value = "";
-})
+});
 
 
-console.log(priceEl);
+console.log();

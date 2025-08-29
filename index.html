@@ -5,63 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Form</title>
+    <!-- google form link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+        <!-- imported ccs animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- link styles.css -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- link script.js -->
     <script defer src="script.js"></script>
 </head>
 
 <body>
-    <div class="form-El">
-        <div class="foating-circle"></div>
-        <div class="foating-circle"></div>
-        <div class="foating-circle"></div>
-        <h2>Add New Product</h2>
-        <form action="" method="post">
+    <main class="container">
+        <section class="Left-container">
+            <h2 class="heading-primary">e-commerce product upload page</h2>
+            <img src="background.png" alt="shopping image" loading="lazy" class="image animate__animated animate__fadeInUp">
+            <div class="foating-circles"></div>
+            <div class="foating-circle"></div>
+            <div class="foating-circle"></div>
+        </section>
+
+        <form action="" id="form">
+            <h3 class="secondary-text animate__animated animate__heartBeat">Add New Product</h3>
             <!-- Name -->
             <div class="data">
-
-                <input type="text" id="name" name="name" required>
-                <label for="name">Product Name</label>
-
+                <input type="text" id="name" name="name" placeholder="Product Name" required>
             </div>
             
             <!-- Price -->
            <div class="data">
-
-              <input type="number" id="price" name="price" required>
-              <label for="price">Price</label>
-            
+                <input type="number" id="price" name="price" placeholder="Price" required>
             </div>
 
             <!-- Images -->
             <div class="data">
-
-                <input type="text" id="images"  multiple>
-                <label for="images">Upload Images</label>
-
+                <input type="text" id="images" placeholder="Upload Images"  multiple>
             </div>
 
             <!-- Category -->
            <div class="data">
-
-             <input type="text" id="category" name="category" required>
-             <label for="category">Category</label>
-            
+                <input type="text" id="category" name="category" placeholder="Category" required>
            </div>
            
             <!-- Quantity -->
            <div class="data">
-
-             <input type="number" id="quantity" name="quantity" required>
-             <label for="quantity">Quantity Available</label>
-
+                <input type="number" id="quantity" name="quantity" placeholder="Quantity Available" required>
            </div>
 
             <!-- Description -->
            <div class="data">
-
-            <input type="text" id="description" name="description" required>
-            <label for="description">Description</label>
-            
+                <input type="text" id="description" name="description" placeholder="Description" required>
            </div>
             
             <!-- Submit -->
@@ -69,7 +70,8 @@
             <input type="submit" id="submit" name="submit">
            </div>
         </form>
-    </div>
+
+    </main>
 </body>
 
 </html>
